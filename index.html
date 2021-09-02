@@ -4,46 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <style>
-      body{
-        margin: 0;
-      }
-      .container{
-        display: flex;
-        flex-direction: column;
-      }
-      header{
-        border-bottom: 1px solid gray;
-        padding-left: 20px;
-        background-color: powderblue;
-        color: white;
-        font-family: 'Nanum Gothic', sans-serif;
-      }
-      footer{
-        border-top: 1px solid gray;
-      }
-      .content{
-        display: flex;
-        font-family: 'Jua', sans-serif;
-      }
-      .content nav{
-        border-right: 1px solid gray;
-      }
-      .content aside{
-        border-left: 1px solid gray;
-      }
-      nav, aside{
-        flex-basis: 150px;
-        flex-shrink: 0;
-      }
-      main{
-        padding-left: 20px;
-      }
-      footer{
-        text-align: center;
-        font-family: 'Jua', sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
@@ -58,6 +19,8 @@
             <li>Ryu</li>
             <p>&nbsp;</p>
             <li>Park</li>
+            <p>&nbsp;</p>
+            <li>Jun</li>
           </ul>
         </nav>
         <main>
@@ -65,13 +28,18 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar placerat accumsan. Praesent lorem nisl, dignissim ut feugiat ac, feugiat commodo dolor. Maecenas semper lacus vitae pulvinar tincidunt. Etiam a nisi euismod, egestas enim non, tincidunt est. Curabitur sit amet metus vestibulum, egestas purus ut, pulvinar metus. Nullam hendrerit vehicula augue eget ultrices. Vivamus vestibulum magna quis neque sagittis sollicitudin. Praesent porta sem quis enim hendrerit viverra. In et velit tincidunt, commodo enim vitae, vestibulum velit. Nullam et libero eget felis feugiat blandit ac mattis est. Sed molestie aliquam nibh nec lobortis. Mauris et eleifend tortor, rhoncus venenatis dolor. Mauris sit amet fermentum turpis.</p>
         </main>
         <aside>
-          사이드에 추가적으로 넣고 싶은 내용
+          <p>Weather:</p>
+          <span id = "weather"></span>
+          <br>
+          <p>Region:</p>
+          <span id = "region"></span>
         </aside>
       </section>
       <footer>
-        <p>작성자: 이도현 / 류영우 / 박찬길</p>
+        <p>작성자: 이도현 / 류영우 / 박찬길 / 전재병</p>
         <p><a href="index.html">홈페이지</a></p>
       </footer>
     </div>
+    <script src = "weather.js"></script>
   </body>
 </html>
