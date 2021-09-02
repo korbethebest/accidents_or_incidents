@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+header{
+  border-bottom: 1px solid gray;
+  padding-left: 20px;
+  background-color: powderblue;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+footer{
+  border-top: 1px solid gray;
+}
+.content{
+  display: flex;
+  font-family: 'Jua', sans-serif;
+}
+.content nav{
+  border-right: 1px solid gray;
+}
+.content aside{
+  border-left: 1px solid gray;
+}
+nav, aside{
+  flex-basis: 150px;
+  flex-shrink: 0;
+}
+main{
+  padding-left: 20px;
+}
+footer{
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+}
